@@ -1,0 +1,277 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Prabuddha Singh, Unity developer focused on gameplay systems, scene architecture, and interactive game experiences."
+    />
+    <title>Prabuddha Singh | Unity Developer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top">Prabuddha Singh</a>
+      <nav aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Unity developer in Lucknow, India</p>
+          <h1 id="intro-title">Unity developer building maintainable gameplay systems, scene flows, and prototypes.</h1>
+          <p class="intro">
+            I build Unity gameplay systems with C#, from character controllers and combat prototypes to production-ready
+            scene architecture. My recent work focuses on scalable additive scene loading, clean implementation boundaries,
+            and documentation that helps teams move faster without losing stability.
+          </p>
+          <div class="hero-actions" aria-label="Contact and profile links">
+            <a href="mailto:prabuddha9196003146@gmail.com">Email</a>
+            <a href="https://github.com/prabuddha-singh">GitHub</a>
+            <a href="https://www.linkedin.com/in/prabuddha-singh">LinkedIn</a>
+          </div>
+        </div>
+        <figure class="profile-visual">
+          <div class="portrait-frame">
+            <img
+              src="assets/profile-photo.jpeg"
+              alt="Portrait of Prabuddha Singh"
+            />
+          </div>
+          <figcaption>
+            <strong>Unity3D / C# / Gameplay Systems</strong>
+            <span>Scene architecture, player systems, documentation, and small-team production support.</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="work" class="section-grid work-section" aria-labelledby="work-title">
+        <div>
+          <p class="eyebrow">Experience</p>
+          <h2 id="work-title">Production work shaped around stability, clarity, and team handoff.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item feature-item">
+            <div class="timeline-meta">Akiyam Solutions / Aug 2025 to present</div>
+            <h3>Unity Developer</h3>
+            <ul>
+              <li>
+                Architected a centralized <strong>single-scene additive loading framework</strong> in Unity using a
+                persistent <code>MasterScene</code>, modular gameplay scenes, and custom scene management systems to
+                improve scalability, maintainability, and runtime stability.
+              </li>
+              <li>
+                Led a team of <strong>7-8 developers</strong> during the transition from legacy scene workflows to a
+                unified additive-loading architecture, coordinating integration efforts, debugging scene lifecycle
+                conflicts, and standardizing implementation practices across systems.
+              </li>
+              <li>
+                Produced detailed technical documentation covering scene flow, system dependencies, migration strategy,
+                and architectural decisions, enabling smoother onboarding, collaboration, and long-term maintainability
+                of the project.
+              </li>
+            </ul>
+          </article>
+          <article class="timeline-item connected-highlight">
+            <div class="timeline-meta">Akiyam architecture highlight</div>
+            <h3>Single-entry-point Unity scene flow</h3>
+            <p>
+              Designed a master scene approach that owns the currently active gameplay scene and prevents multiple
+              gameplay scenes from competing for runtime state. The result is a clearer project entry point, fewer
+              scene lifecycle conflicts, and easier integration for developers working in parallel.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Builds that show systems thinking, iteration, and Unity fundamentals.</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-media media-asset" data-label="3D Character Controller" tabindex="0">
+              <video src="assets/character-controller-prototype.mp4" preload="metadata" playsinline aria-label="3D character controller prototype gameplay video"></video>
+            </div>
+            <div class="project-body">
+              <div class="project-topline">01 / Unity3D and C#</div>
+              <h3>3D Character Controller Prototype</h3>
+              <ul>
+                <li>Built movement, jumping, camera control, and physics interaction as reusable player-system foundations.</li>
+                <li>Structured scripts around clear responsibilities so mechanics can expand without turning into tangled controller code.</li>
+                <li>Created a practical base for future gameplay layers such as combat, traversal, interaction, and animation polish.</li>
+              </ul>
+              <a href="https://github.com/prabuddha-singh/ChroniclesOfRajMahal">Repository</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media media-asset" data-label="Combat Controller" tabindex="0">
+              <video src="assets/combat-system-prototype.mp4" preload="metadata" playsinline aria-label="Combat system prototype work in progress video"></video>
+            </div>
+            <div class="project-body">
+              <div class="project-topline active">02 / Currently working on / Unity3D, C#, AI</div>
+              <h3>Combat Controller Prototype</h3>
+              <p class="project-tagline active">Currently working on this prototype.</p>
+              <ul>
+                <li>Designed as a separate combat layer with state-machine planning for attacks, combos, recovery, and transitions.</li>
+                <li>Targets enemy AI behavior, foot IK, timing windows, and readable controller states for responsive third-person combat.</li>
+                <li>Shows comfort breaking a larger gameplay problem into animation, input, AI, and system architecture concerns.</li>
+              </ul>
+              <a href="https://github.com/prabuddha-singh/ChroniclesOfRajMahal">Repository</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media media-asset" data-label="Cube Runner">
+              <img src="assets/cube-runner.jpeg" alt="Cube Runner gameplay shown inside the Unity editor" loading="lazy" />
+            </div>
+            <div class="project-body">
+              <div class="project-topline">03 / Unity3D and C#</div>
+              <h3>Cube Runner</h3>
+              <ul>
+                <li>Implemented a complete arcade loop with player movement, obstacle spawning, collision detection, and score tracking.</li>
+                <li>Used prefabs and component-based Unity workflows to keep gameplay objects modular and easy to iterate.</li>
+                <li>Demonstrates core Unity fundamentals through a playable, understandable, and extendable project.</li>
+              </ul>
+              <a href="https://github.com/prabuddha-singh/CubeRunner">Repository</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media alt-c"><span>Ronin Bird</span></div>
+            <div class="project-body">
+              <div class="project-topline planned">04 / Planned project / Unity2D, C#, Boss Design</div>
+              <h3>Ronin Bird</h3>
+              <p class="project-tagline">Planned project - Flappy Burd, but you beat the shit out of those pillars.</p>
+              <ul>
+                <li>Reframes pillars from passive obstacles into hostile entities, opening space for attack timing, enemy patterns, and boss encounters.</li>
+                <li>Intended to show design thinking around difficulty curves, readable hazards, and simple mechanics with high replay value.</li>
+              </ul>
+              <a href="https://github.com/prabuddha-singh">Repository planned</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media alt-d"><span>AR Learning</span></div>
+            <div class="project-body">
+              <div class="project-topline planned">05 / Planned project / Unity, Vuforia, AR</div>
+              <h3>AR Interactive Learning System</h3>
+              <p class="project-tagline">Planned project - AR diagram scanning with matching 3D model projection.</p>
+              <ul>
+                <li>Uses image recognition to connect scanned diagrams with matching 3D models for interactive learning.</li>
+                <li>Combines Unity scene setup, Vuforia targets, model placement, and recognition-driven user feedback.</li>
+                <li>Demonstrates ability to apply Unity outside games while still using real-time interaction and spatial presentation.</li>
+              </ul>
+              <a href="https://github.com/prabuddha-singh">Repository planned</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-media alt-e"><span>Web Systems</span></div>
+            <div class="project-body">
+              <div class="project-topline">06 / Python and Web</div>
+              <h3>BorrowHub</h3>
+              <ul>
+                <li>Shows backend-oriented development range beyond Unity, including data flow, user-facing features, and web structure.</li>
+                <li>Strengthens general engineering habits that transfer into game tooling, services, dashboards, and production support.</li>
+                <li>Expands the portfolio with evidence of learning across stacks instead of staying limited to one engine workflow.</li>
+              </ul>
+              <a href="https://github.com/prabuddha-singh/BorrowHub">Repository</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section-grid skills-section" aria-labelledby="skills-title">
+        <div>
+          <p class="eyebrow">Skillset</p>
+          <h2 id="skills-title">The tools and habits behind the work.</h2>
+        </div>
+        <div class="skill-board" aria-label="Skills grouped by area">
+          <article class="skill-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 21 7v10l-9 5-9-5V7l9-5zm0 2.25L6.8 7.1 12 10l5.2-2.9L12 4.25zM5 8.9v6.9l6 3.35v-6.9L5 8.9zm14 0-6 3.35v6.9l6-3.35V8.9z" /></svg>
+            <div>
+              <h3>Unity Development</h3>
+              <p>Unity3D, Unity2D, scene workflows, prefabs, components, gameplay loops, UI implementation, and environment polish.</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.2 16.6L3.6 12l4.6-4.6 1.4 1.4L6.4 12l3.2 3.2-1.4 1.4zm7.6 0l-1.4-1.4 3.2-3.2-3.2-3.2 1.4-1.4 4.6 4.6-4.6 4.6zM11.3 18l-1.9-.6 3.3-11.4 1.9.6L11.3 18z" /></svg>
+            <div>
+              <h3>Programming</h3>
+              <p>C#, C, Java, Python, object-oriented structure, debugging, gameplay logic, state planning, and clean implementation boundaries.</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v3H4V5zm0 5h7v9H4v-9zm9 0h7v4h-7v-4zm0 6h7v3h-7v-3z" /></svg>
+            <div>
+              <h3>Systems Design</h3>
+              <p>Additive scene loading, persistent master scenes, gameplay architecture, migration planning, dependency mapping, and runtime stability.</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10l4 4v12H5V4zm9 1.8V9h3.2L14 5.8zM8 12h8v1.8H8V12zm0 3.4h8v1.8H8v-1.8zM8 8.6h3.8v1.8H8V8.6z" /></svg>
+            <div>
+              <h3>Production Habits</h3>
+              <p>Technical documentation, team coordination, Git and GitHub, implementation standards, onboarding notes, and collaboration support.</p>
+            </div>
+          </article>
+          <article class="skill-card">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 016.5 4h11A2.5 2.5 0 0120 6.5v11a2.5 2.5 0 01-2.5 2.5h-11A2.5 2.5 0 014 17.5v-11zM6 8v8h12V8H6zm2 2h4v4H8v-4zm5 0h3v1.6h-3V10zm0 2.4h3V14h-3v-1.6z" /></svg>
+            <div>
+              <h3>Web Range</h3>
+              <p>Django REST Framework, React.js, Python web development, API thinking, and user-facing feature structure.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Available for Unity gameplay and junior game developer roles.</h2>
+        <p>
+          I am especially interested in gameplay systems, player controllers, scene flow, AI behavior, and small teams
+          where clear implementation and documentation matter.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:prabuddha9196003146@gmail.com">prabuddha9196003146@gmail.com</a>
+          <a href="tel:+919196003146">+91 9196003146</a>
+          <a href="https://github.com/prabuddha-singh">github.com/prabuddha-singh</a>
+          <a href="https://www.linkedin.com/in/prabuddha-singh">linkedin.com/in/prabuddha-singh</a>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.querySelectorAll(".media-asset video").forEach((video) => {
+        const frame = video.closest(".media-asset");
+        const showControls = () => video.setAttribute("controls", "");
+        const hideControls = () => {
+          if (video.paused) video.removeAttribute("controls");
+        };
+
+        frame.addEventListener("mouseenter", showControls);
+        frame.addEventListener("focusin", showControls);
+        frame.addEventListener("mouseleave", hideControls);
+        frame.addEventListener("focusout", hideControls);
+        video.addEventListener("pause", () => {
+          if (!frame.matches(":hover") && document.activeElement !== frame) video.removeAttribute("controls");
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
