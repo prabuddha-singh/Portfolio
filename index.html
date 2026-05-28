@@ -118,13 +118,13 @@
               <video src="assets/combat-system-prototype.mp4" preload="metadata" playsinline aria-label="Combat system prototype work in progress video"></video>
             </div>
             <div class="project-body">
-              <div class="project-topline active">02 / Currently working on / Unity3D, C#, AI</div>
+              <div class="project-topline active">02 / Combat systems / Unity3D, C#, Physics, VFX</div>
               <h3>Combat Controller Prototype</h3>
-              <p class="project-tagline active">Currently working on this prototype.</p>
+              <p class="project-tagline active">Currently working - refining attack animations</p>
               <ul>
-                <li>Designed as a separate combat layer with state-machine planning for attacks, combos, recovery, and transitions.</li>
-                <li>Targets enemy AI behavior, foot IK, timing windows, and readable controller states for responsive third-person combat.</li>
-                <li>Shows comfort breaking a larger gameplay problem into animation, input, AI, and system architecture concerns.</li>
+                <li>Rebuilt the attack flow from simple input-to-animation triggering into a structured pipeline: input, gameplay logic, combat state, animation, hit detection, and damage resolution.</li>
+                <li>Implemented combo logic through readable combat states and timed transition windows, allowing attacks to chain cleanly while keeping animation triggers, input checks, and damage timing separated.</li>
+                <li>Added impact-feedback systems including knockback, hit stop, camera shake, and hit VFX, combining physics, coroutines, and visual cues to make successful attacks feel readable and satisfying.</li>
               </ul>
               <a href="https://github.com/prabuddha-singh/ChroniclesOfRajMahal">Repository</a>
             </div>
@@ -269,9 +269,6 @@
     </script>
   </body>
 </html>
-
-
-
 
 
 
